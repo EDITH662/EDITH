@@ -192,9 +192,13 @@
 .recurring-title{font-size:11px;letter-spacing:2px;color:#61dcff;font-weight:900;margin-bottom:7px}
 .checkout-recurring p{font-size:12px!important;color:#819aa5!important;line-height:1.55;margin:0}
 </style>
+
+<style id="edith-editions-responsive">
+@media(max-width:800px){#base .plans{grid-template-columns:1fr!important}#base .plans>div{min-width:0!important;padding:4px 0}}
+</style>
 </head><body>
-<nav><div class="logo"><b>EDITH</b> // AI</div><div><a href="#capacidades">CAPACIDADES</a><a href="#planes">PLANES</a><a href="#versiones">VERSIONES</a><a href="#voz">VOZ</a><a href="#funciones">FUNCIONES</a></div></nav>
-<header class="hero"><div class="orb"></div><div><div class="tag">NEXT-GENERATION PERSONAL INTELLIGENCE</div><h1>Tu voz.<br><span>Tu sistema.</span></h1><p>EDITH es una IA personal diseñada para conversar, recordar, analizar, ver, planificar y ayudarte a ejecutar acciones mediante lenguaje natural.</p><div class="cta"><a class="primary" href="#capacidades">DESCUBRIR EDITH</a><a class="cta download" href="#planes">DESCARGAR EDITH</a><a class="secondary" href="#voz">VER CÓMO FUNCIONA</a></div></div></header>
+<nav><div class="logo"><b>EDITH</b> // AI</div><div><a href="#capacidades">CAPACIDADES</a><a href="#base">EDITH PRO / PREMIUM</a><a href="#voz">VOZ</a><a href="#funciones">FUNCIONES</a></div></nav>
+<header class="hero"><div class="orb"></div><div><div class="tag">NEXT-GENERATION PERSONAL INTELLIGENCE</div><h1>Tu voz.<br><span>Tu sistema.</span></h1><p>EDITH es una IA personal diseñada para conversar, recordar, analizar, ver, planificar y ayudarte a ejecutar acciones mediante lenguaje natural.</p><div class="cta"><a class="primary" href="#capacidades">DESCUBRIR EDITH</a><a class="secondary" href="#voz">VER CÓMO FUNCIONA</a></div></div></header>
 <section id="capacidades"><div class="head"><div class="k">01 // CORE INTELLIGENCE</div><h2>Más que un asistente.</h2><p>Una arquitectura que reúne inteligencia, memoria, visión, herramientas y automatización en una sola experiencia.</p></div><div class="grid">
 <div class="card"><div class="icon">◈</div><h3>Inteligencia</h3><p>Comprende lenguaje natural, analiza problemas y selecciona herramientas para resolver peticiones.</p></div>
 <div class="card"><div class="icon">◎</div><h3>Memoria</h3><p>Guarda información útil, preferencias, tareas y contexto para mantener continuidad.</p></div>
@@ -204,302 +208,62 @@
 <div class="card"><div class="icon">△</div><h3>Seguridad</h3><p>Permisos, listas de acciones y registros para reducir ejecuciones no deseadas.</p></div>
 </div></section>
 
-<section id="planes">
+<section id="base">
   <div class="head">
     <div class="k">03 // EDITH EDITIONS</div>
-    <h2>Niveles de EDITH.</h2>
-    <p>Elige tu nivel y decide si quieres pagar mensual o anualmente.</p>
+    <h2>EDITH Pro y Premium.</h2>
+    <p>Las próximas ediciones de EDITH están en desarrollo. La experiencia completa llegará progresivamente con nuevas capacidades, dispositivos e integraciones.</p>
   </div>
 
-  <div class="billing-switch" role="group" aria-label="Periodo de facturación">
-    <button type="button" class="billing-option active" data-period="monthly">MENSUAL</button>
-    <button type="button" class="billing-option" data-period="yearly">ANUAL</button>
-    <span class="save-badge">AHORRA CON ANUAL</span>
-  </div>
-
-  <div class="plans">
+  <div class="plans" style="display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:stretch">
     <article class="plan">
-      <div class="plan-tag">BASE</div>
-      <h3>EDITH Base</h3>
-      <div class="price" data-monthly="$0" data-yearly="$0"><span>$</span><b>0</b> <small>USD</small></div>
-      <p class="billing-label">GRATIS</p>
-      <p class="plan-sub">Para comenzar gratis en ordenador.</p>
-      <ul>
-        <li>Windows y macOS</li>
-        <li>Hasta 12 horas de acceso</li>
-        <li>Funciones técnicas y académicas limitadas</li>
-        <li>Interacción por voz</li>
-        <li>Sin cámara</li>
-      </ul>
-      <a class="plan-cta base-cta" href="EDITH.zip" download>OBTENER GRATIS</a>
-    </article>
-
-    <article class="plan featured">
       <div class="plan-tag">PRO</div>
       <h3>EDITH Pro</h3>
-      <div class="price" data-monthly="$10" data-yearly="$120"><span>$</span><b>10</b> <small>USD</small></div>
-      <p class="billing-label">POR MES</p>
-      <p class="plan-sub">Más potencia para ordenador y móvil.</p>
+      <div class="price"><span>EN DESARROLLO</span></div>
+      <p class="plan-sub">Una edición ampliada para llevar EDITH más allá del uso básico.</p>
       <ul>
-        <li>Linux, Windows y macOS</li>
-        <li>Disponible hasta 20 horas</li>
-        <li>Cámara incluida</li>
-        <li>Funciones ampliadas respecto a Base</li>
-        <li>Compatible con dispositivos móviles</li>
+        <li>Todo lo incluido en la experiencia principal de EDITH</li>
+        <li>Disponible para Linux, Windows y macOS</li>
+        <li>Preparada para dispositivos móviles</li>
+        <li>Mayor duración de uso</li>
+        <li>Cámara y visión artificial</li>
+        <li>Funciones técnicas y académicas ampliadas</li>
+        <li>Memoria, planificación y herramientas avanzadas</li>
+        <li>Control mediante voz</li>
       </ul>
-      <a class="plan-cta paid-cta" href="#pagos" data-plan="pro">ELEGIR PRO</a>
     </article>
 
-    <article class="plan">
+    <div style="display:flex;align-items:center;justify-content:center;min-width:130px">
+      <div style="border:1px solid rgba(91,215,255,.3);border-radius:999px;padding:14px 20px;color:#65ddff;font-family:monospace;font-size:12px;letter-spacing:2px;text-align:center;box-shadow:0 0 25px rgba(91,215,255,.08)">EN PROGRESO</div>
+    </div>
+
+    <article class="plan featured">
       <div class="plan-tag">PREMIUM</div>
       <h3>EDITH Premium</h3>
-      <div class="price" data-monthly="$20" data-yearly="$200"><span>$</span><b>20</b> <small>USD</small></div>
-      <p class="billing-label">POR MES</p>
-      <p class="plan-sub">La experiencia EDITH completa.</p>
+      <div class="price"><span>EN DESARROLLO</span></div>
+      <p class="plan-sub">La visión completa de EDITH, pensada como el nivel máximo del sistema.</p>
       <ul>
-        <li>Todos los dispositivos</li>
-        <li>Disponible 24 horas</li>
-        <li>Cámara incluida</li>
-        <li>Todas las funciones</li>
+        <li>Todo lo incluido en EDITH Pro</li>
+        <li>Disponible en todos los dispositivos compatibles</li>
+        <li>Uso continuo durante todo el día</li>
+        <li>Cámara y visión artificial completa</li>
+        <li>Todas las funciones técnicas y académicas</li>
+        <li>Investigación, análisis, programación y simulación</li>
+        <li>Ingeniería, ciencia y herramientas avanzadas</li>
+        <li>Integraciones, skills y evolución del sistema</li>
         <li>Actualizaciones automáticas</li>
+        <li>Experiencia de voz completa de EDITH</li>
       </ul>
-      <a class="plan-cta paid-cta" href="#pagos" data-plan="premium">ELEGIR PREMIUM</a>
-    </article>
-  </div>
-
-  <div class="plan-note">
-    Base: $0. Pro: $10/mes o $120/año. Premium: $20/mes o $200/año.
-    La facturación anual se cobra una vez al año.
-  </div>
-</section>
-
-<section id="voz"><div class="demo"><div><div class="k">02 // VOICE FIRST</div><h2>Sin botones.<br>Solo habla.</h2><p style="color:#91aab3;line-height:1.8">La experiencia de EDITH está pensada alrededor de la voz: pedir, preguntar, activar y consultar sin depender de menús.</p></div><div class="terminal"><p><b>USUARIO:</b> EDITH, ¿qué tengo pendiente hoy?</p><div class="answer">He encontrado tus tareas y recordatorios. Te preparo un resumen.</div><p><b>USUARIO:</b> Recuérdame esto mañana a las nueve.</p><div class="answer">Recordatorio creado para mañana a las 09:00.</div><p><b>USUARIO:</b> Analiza lo que ves.</p><div class="answer">Activando análisis visual.</div></div></div></section>
-
-<section id="versiones">
-  <div class="head">
-    <div class="k">03 // EDITH EDITIONS</div>
-    <h2>Elige tu nivel de inteligencia.</h2>
-    <p>Tres versiones de EDITH para distintos niveles de acceso, dispositivos y capacidades.</p>
-  </div>
-
-  <div class="plans">
-    <article class="plan">
-      <div class="plan-tag">BASE</div>
-      <h3>EDITH Base</h3>
-      <div class="price"><span>GRATIS</span></div>
-      <p class="plan-desc">La experiencia esencial de EDITH para ordenador.</p>
-      <ul>
-        <li>Windows y macOS</li>
-        <li>Hasta 12 horas de disponibilidad</li>
-        <li>Funciones de IA limitadas</li>
-        <li>Conversación y asistencia básica</li>
-        <li>Funciones técnicas básicas</li>
-        <li>Sin cámara incluida</li>
-      </ul>
-      <div class="plan-foot">Ideal para probar EDITH</div>
-    </article>
-
-    <article class="plan featured">
-      <div class="plan-tag">PRO</div>
-      <h3>EDITH Pro</h3>
-      <div class="price"><span>$10</span><small>/ mes</small></div>
-      <p class="plan-desc">Más potencia, más dispositivos y visión integrada.</p>
-      <ul>
-        <li>Linux, Windows y macOS</li>
-        <li>PC y dispositivos móviles</li>
-        <li>Hasta 20 horas de disponibilidad</li>
-        <li>Cámara y análisis visual</li>
-        <li>Más funciones técnicas y académicas</li>
-        <li>Limitaciones reducidas frente a Base</li>
-      </ul>
-      <div class="plan-foot">Para usuarios que quieren más de EDITH</div>
-    </article>
-
-    <article class="plan">
-      <div class="plan-tag">PREMIUM</div>
-      <h3>EDITH Premium</h3>
-      <div class="price"><span>$15</span><small>/ mes</small></div>
-      <p class="plan-desc">La experiencia completa de EDITH en todos tus dispositivos.</p>
-      <ul>
-        <li>Todos los dispositivos</li>
-        <li>24 horas de disponibilidad</li>
-        <li>Todas las funciones de EDITH</li>
-        <li>Cámara y análisis visual</li>
-        <li>Máximo nivel de capacidades técnicas y académicas</li>
-        <li>Sin las limitaciones de Base y Pro</li>
-      </ul>
-      <div class="plan-foot">La experiencia EDITH completa</div>
     </article>
   </div>
 </section>
 
-<section id="funciones"><div class="head"><div class="k">03 // TECHNICAL & ACADEMIC CORE</div><h2>Funciones que piensan contigo.</h2><p>EDITH reemplaza los antiguos modos por capacidades técnicas y académicas especializadas. Todas pueden activarse mediante voz y combinarse según la tarea.</p></div><div class="modes"><span class="mode">INVESTIGACIÓN</span><span class="mode">ANÁLISIS</span><span class="mode">MATEMÁTICA</span><span class="mode">PROGRAMACIÓN</span><span class="mode">SIMULACIÓN</span><span class="mode">VISIÓN</span><span class="mode">INGENIERÍA</span><span class="mode">CIENCIA</span><span class="mode">ACADÉMICO</span><span class="mode">VERIFICACIÓN</span></div><div class="grid" style="margin-top:28px"><div class="card"><div class="icon">01</div><h3>Investigación</h3><p>Búsqueda, recopilación, comparación y síntesis de información científica y técnica.</p></div><div class="card"><div class="icon">02</div><h3>Análisis</h3><p>Descompone problemas, datos, textos y sistemas para encontrar patrones y conclusiones.</p></div><div class="card"><div class="icon">03</div><h3>Matemática</h3><p>Álgebra, cálculo, estadística, ecuaciones, razonamiento cuantitativo y modelamiento.</p></div><div class="card"><div class="icon">04</div><h3>Programación</h3><p>Generación, explicación, depuración, revisión y pruebas de código y proyectos.</p></div><div class="card"><div class="icon">05</div><h3>Simulación</h3><p>Construcción de escenarios y modelos para estudiar comportamientos y resultados.</p></div><div class="card"><div class="icon">06</div><h3>Visión</h3><p>Interpretación de imágenes, documentos, objetos y elementos del entorno mediante visión artificial.</p></div><div class="card"><div class="icon">07</div><h3>Ingeniería</h3><p>Diseño, diagnóstico, optimización y resolución de problemas de sistemas técnicos.</p></div><div class="card"><div class="icon">08</div><h3>Ciencia</h3><p>Explicación de fenómenos, formulación de hipótesis y razonamiento basado en evidencia.</p></div><div class="card"><div class="icon">09</div><h3>Académico</h3><p>Estudio guiado, ejercicios, resúmenes, preparación académica y aprendizaje personalizado.</p></div><div class="card"><div class="icon">10</div><h3>Verificación</h3><p>Comprueba cálculos, resultados, fuentes y posibles contradicciones antes de concluir.</p></div></div></section>
-<section><div class="head"><div class="k">04 // EXTENSIBLE INTELLIGENCE</div><h2>Una plataforma técnica que evoluciona.</h2></div><div class="grid"><div class="card"><h3>Skills y plugins</h3><p>Nuevas capacidades pueden añadirse como módulos independientes.</p></div><div class="card"><h3>Multiagente</h3><p>Arquitectura preparada para investigación, programación, análisis, estudio y operación.</p></div><div class="card"><h3>Integraciones</h3><p>Servicios externos y hardware compatible con permisos controlados.</p></div></div></section>
-<section class="final"><div><div class="k">05 // THE FUTURE IS VOICE</div><h2>La tecnología no debería obligarte a buscar un botón.</h2><p>Deja que EDITH entienda lo que necesitas.</p><p style="color:#65ddff;font-family:monospace">“EDITH, activa el sistema.”</p></div></section>
+<section id="voz"><div class="demo"><div><div class="k">04 // VOICE FIRST</div><h2>Sin botones.<br>Solo habla.</h2><p style="color:#91aab3;line-height:1.8">La experiencia de EDITH está pensada alrededor de la voz: pedir, preguntar, activar y consultar sin depender de menús.</p></div><div class="terminal"><p><b>USUARIO:</b> EDITH, ¿qué tengo pendiente hoy?</p><div class="answer">He encontrado tus tareas y recordatorios. Te preparo un resumen.</div><p><b>USUARIO:</b> Recuérdame esto mañana a las nueve.</p><div class="answer">Recordatorio creado para mañana a las 09:00.</div><p><b>USUARIO:</b> Analiza lo que ves.</p><div class="answer">Activando análisis visual.</div></div></div></section>
+
+<section id="funciones"><div class="head"><div class="k">05 // TECHNICAL & ACADEMIC CORE</div><h2>Funciones que piensan contigo.</h2><p>EDITH reemplaza los antiguos modos por capacidades técnicas y académicas especializadas. Todas pueden activarse mediante voz y combinarse según la tarea.</p></div><div class="modes"><span class="mode">INVESTIGACIÓN</span><span class="mode">ANÁLISIS</span><span class="mode">MATEMÁTICA</span><span class="mode">PROGRAMACIÓN</span><span class="mode">SIMULACIÓN</span><span class="mode">VISIÓN</span><span class="mode">INGENIERÍA</span><span class="mode">CIENCIA</span><span class="mode">ACADÉMICO</span><span class="mode">VERIFICACIÓN</span></div><div class="grid" style="margin-top:28px"><div class="card"><div class="icon">01</div><h3>Investigación</h3><p>Búsqueda, recopilación, comparación y síntesis de información científica y técnica.</p></div><div class="card"><div class="icon">02</div><h3>Análisis</h3><p>Descompone problemas, datos, textos y sistemas para encontrar patrones y conclusiones.</p></div><div class="card"><div class="icon">03</div><h3>Matemática</h3><p>Álgebra, cálculo, estadística, ecuaciones, razonamiento cuantitativo y modelamiento.</p></div><div class="card"><div class="icon">04</div><h3>Programación</h3><p>Generación, explicación, depuración, revisión y pruebas de código y proyectos.</p></div><div class="card"><div class="icon">05</div><h3>Simulación</h3><p>Construcción de escenarios y modelos para estudiar comportamientos y resultados.</p></div><div class="card"><div class="icon">06</div><h3>Visión</h3><p>Interpretación de imágenes, documentos, objetos y elementos del entorno mediante visión artificial.</p></div><div class="card"><div class="icon">07</div><h3>Ingeniería</h3><p>Diseño, diagnóstico, optimización y resolución de problemas de sistemas técnicos.</p></div><div class="card"><div class="icon">08</div><h3>Ciencia</h3><p>Explicación de fenómenos, formulación de hipótesis y razonamiento basado en evidencia.</p></div><div class="card"><div class="icon">09</div><h3>Académico</h3><p>Estudio guiado, ejercicios, resúmenes, preparación académica y aprendizaje personalizado.</p></div><div class="card"><div class="icon">10</div><h3>Verificación</h3><p>Comprueba cálculos, resultados, fuentes y posibles contradicciones antes de concluir.</p></div></div></section>
+<section><div class="head"><div class="k">06 // EXTENSIBLE INTELLIGENCE</div><h2>Una plataforma técnica que evoluciona.</h2></div><div class="grid"><div class="card"><h3>Skills y plugins</h3><p>Nuevas capacidades pueden añadirse como módulos independientes.</p></div><div class="card"><h3>Multiagente</h3><p>Arquitectura preparada para investigación, programación, análisis, estudio y operación.</p></div><div class="card"><h3>Integraciones</h3><p>Servicios externos y hardware compatible con permisos controlados.</p></div></div></section>
+<section class="final"><div><div class="k">07 // THE FUTURE IS VOICE</div><h2>La tecnología no debería obligarte a buscar un botón.</h2><p>Deja que EDITH entienda lo que necesitas.</p><p style="color:#65ddff;font-family:monospace">“EDITH, activa el sistema.”</p></div></section>
 <footer><span>EDITH // PERSONAL AI SYSTEM</span><span>© 2026 — Proyecto EDITH</span></footer>
 
 
-<section id="pagos">
-  <div class="head">
-    <div class="k">05 // NEQUI SECURE CHECKOUT</div>
-    <h2>Pago con Nequi.</h2>
-    <p>El apartado está preparado para conectarse posteriormente al Nequi Negocios del representante. EDITH no guarda datos bancarios ni credenciales.</p>
-  </div>
-
-  <div class="payment-grid">
-    <button class="payment-method active" type="button" data-payment="nequi">
-      <span class="payment-logo">NQ</span>
-      <strong>Nequi</strong>
-      <small>Pago seguro mediante Nequi Negocios</small>
-    </button>
-    <div class="payment-method payment-method-info">
-      <span class="payment-logo">API</span>
-      <strong>Suscripciones</strong>
-      <small>Preparado para conectar la API de suscripciones de Nequi</small>
-    </div>
-  </div>
-
-  <div class="payment-note">
-    <strong>Preparado para producción:</strong> el checkout usará un Link de Pago oficial de Nequi Negocios o, si el representante habilita la integración, la API de pagos/suscripciones de Nequi. Las credenciales privadas nunca se colocan en esta página.
-  </div>
-</section>
-
-<div class="payment-modal" id="paymentModal" aria-hidden="true">
-  <div class="payment-backdrop" data-close-payment></div>
-  <div class="payment-panel payment-panel-wide">
-    <button class="payment-close" type="button" data-close-payment aria-label="Cerrar">×</button>
-
-    <div class="k">EDITH · NEQUI CHECKOUT</div>
-    <h3 id="paymentTitle">Activar EDITH</h3>
-    <p id="paymentDescription">Plan seleccionado: <strong id="selectedPlanText">EDITH Pro · $10/mes</strong></p>
-
-    <div class="nequi-checkout-box">
-      <div class="checkout-summary">
-        <span>Plan seleccionado</span>
-        <strong id="nequiPlanSummary">EDITH Pro · $10 USD/mes</strong>
-      </div>
-
-      <div class="nequi-status-card">
-        <div class="nequi-mark">NQ</div>
-        <div>
-          <h4>Nequi Negocios</h4>
-          <p id="nequiStatusText">Checkout listo para conectar.</p>
-        </div>
-      </div>
-
-      <a id="nequiPayLink" class="nequi-pay-link" href="#" target="_blank" rel="noopener" hidden>CONTINUAR AL PAGO CON NEQUI</a>
-
-      <div id="nequiPending" class="nequi-pending">
-        <strong>Conexión pendiente</strong>
-        <p>Cuando el representante tenga el Link de Pago oficial de Nequi Negocios, se colocará aquí para que el cliente pueda pagar directamente.</p>
-        <span>Formato esperado: https://checkout.nequi.wompi.co/...</span>
-      </div>
-    </div>
-
-    <div class="checkout-recurring">
-      <div class="recurring-title">▣ SUSCRIPCIONES</div>
-      <p>Los planes mensuales/anuales quedan preparados para conectarse a la API de suscripciones de Nequi cuando el negocio sea habilitado para esa integración.</p>
-    </div>
-
-    <p class="checkout-status" id="checkoutStatus">No se han configurado todavía las credenciales ni el enlace de producción.</p>
-  </div>
-</div>
-
-<script id="edith-nequi-payments-script">
-(() => {
-  const modal = document.getElementById('paymentModal');
-  const title = document.getElementById('paymentTitle');
-  const selectedPlanText = document.getElementById('selectedPlanText');
-  const nequiPlanSummary = document.getElementById('nequiPlanSummary');
-  const status = document.getElementById('checkoutStatus');
-  const payLink = document.getElementById('nequiPayLink');
-  const pending = document.getElementById('nequiPending');
-  const nequiStatusText = document.getElementById('nequiStatusText');
-
-  // ============================================================
-  // CONFIGURACIÓN NEQUI NEGOCIOS
-  // ============================================================
-  // El representante debe colocar aquí los LINKS OFICIALES
-  // generados por Nequi Negocios/Wompi.
-  // Nunca coloques contraseñas, PIN, client secrets ni tokens privados.
-  const NEQUI_CONFIG = {
-    mode: 'payment_link',
-    links: {
-      'pro-monthly': '',
-      'pro-yearly': '',
-      'premium-monthly': '',
-      'premium-yearly': ''
-    },
-    subscriptions: {
-      enabled: false,
-      // La API de suscripciones se conectará desde un backend seguro
-      // cuando Nequi habilite la integración para el negocio.
-      endpoint: ''
-    }
-  };
-
-  let selectedPlan = 'pro-monthly';
-
-  const planInfo = {
-    'pro-monthly': 'EDITH Pro · $10 USD/mes',
-    'pro-yearly': 'EDITH Pro · $120 USD/año',
-    'premium-monthly': 'EDITH Premium · $20 USD/mes',
-    'premium-yearly': 'EDITH Premium · $200 USD/año'
-  };
-
-  function openCheckout(plan) {
-    selectedPlan = plan;
-    const text = planInfo[plan] || planInfo['pro-monthly'];
-    selectedPlanText.textContent = text;
-    nequiPlanSummary.textContent = text;
-    title.textContent = 'Activar EDITH con Nequi';
-    modal.classList.add('open');
-    modal.setAttribute('aria-hidden', 'false');
-    renderNequi();
-  }
-
-  function renderNequi() {
-    const link = String(NEQUI_CONFIG.links[selectedPlan] || '').trim();
-    const valid = /^https:\/\/checkout\.nequi\.wompi\.co\//i.test(link);
-
-    if (valid) {
-      payLink.href = link;
-      payLink.hidden = false;
-      pending.hidden = true;
-      nequiStatusText.textContent = 'Enlace oficial conectado para este plan.';
-      status.textContent = 'Puedes continuar al checkout seguro de Nequi.';
-    } else {
-      payLink.hidden = true;
-      pending.hidden = false;
-      nequiStatusText.textContent = 'Checkout preparado para conectar.';
-      status.textContent = 'Falta colocar el Link de Pago oficial de Nequi Negocios para este plan.';
-    }
-  }
-
-  document.querySelectorAll('.paid-cta').forEach(btn => {
-    btn.addEventListener('click', event => {
-      event.preventDefault();
-      openCheckout(btn.dataset.plan === 'premium' ? 'premium-monthly' : 'pro-monthly');
-    });
-  });
-
-  document.querySelectorAll('[data-close-payment]').forEach(el => {
-    el.addEventListener('click', () => {
-      modal.classList.remove('open');
-      modal.setAttribute('aria-hidden', 'true');
-    });
-  });
-
-  document.querySelectorAll('.billing-option').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const period = btn.dataset.period;
-      const current = selectedPlan.startsWith('premium') ? 'premium' : 'pro';
-      const key = current + '-' + (period === 'yearly' ? 'yearly' : 'monthly');
-      if (modal.classList.contains('open')) openCheckout(key);
-    });
-  });
-
-  window.EDITHOpenNequiCheckout = openCheckout;
-})();
-</script>
 </body></html>
